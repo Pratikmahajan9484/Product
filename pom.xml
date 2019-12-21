@@ -9,7 +9,7 @@
 
   
   <modules>
-    <module>rest-executor</module>
+    <module>commons</module>
   </modules>
 
 

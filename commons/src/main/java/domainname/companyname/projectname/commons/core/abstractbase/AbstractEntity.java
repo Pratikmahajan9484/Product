@@ -27,7 +27,7 @@ public class AbstractEntity {
 	private Date lastModifiedOn;
 	
 	@Basic
-	@Column(name="isactive")
+	@Column(name="active")
 	private boolean isActive=true;
 
 	public Long getId() {

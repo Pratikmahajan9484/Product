@@ -10,8 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 
-@MappedSuperclass
-public class AbstractEntity<T> {
+@MappedSuperclass 
+public class AbstractEntity< T extends Number > {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)

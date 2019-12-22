@@ -1,0 +1,7 @@
+Task for Project in future:
+1. need to change package name using java code via shell script.
+2. .properties file se place holder ke through .xml me values inject krna.
+
+currently task
+1. Abstract Entity: creator, lastmodifier, creationtime, modificationtime, active, id(primary key as Long).{completed}
+2. need to create database on server.

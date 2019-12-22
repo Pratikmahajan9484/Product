@@ -11,8 +11,10 @@ import domainname.companyname.projectname.commons.core.abstractbase.AbstractEnti
 
 @Entity
 @Table(name="Student")
-public class Student extends AbstractEntity implements Serializable{
+public class Student extends AbstractEntity<Long> implements Serializable{
 
+	
+	private static final long serialVersionUID = 1L;
 	@Basic
 	@Column(name="name")
 	private String name;

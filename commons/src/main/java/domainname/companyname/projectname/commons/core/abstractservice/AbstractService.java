@@ -6,7 +6,7 @@ public interface AbstractService< T extends AbstractEntity< ? extends Number>, I
 	
 	 public abstract T create(T entity);
 	
-	 public abstract void update(T entity);
+	 public abstract T update(T entity);
 	
 	 public abstract void delete(T entity);
 	

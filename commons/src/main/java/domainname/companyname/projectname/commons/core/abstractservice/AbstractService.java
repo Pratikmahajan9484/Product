@@ -2,13 +2,13 @@ package domainname.companyname.projectname.commons.core.abstractservice;
 
 import domainname.companyname.projectname.commons.core.abstractbase.AbstractEntity;
 
-public interface AbstractService<T extends AbstractEntity< ? extends Number>, P extends Number >{
+public interface AbstractService< T extends AbstractEntity< ? extends Number>, I extends Number >{
 	
-	 abstract void create(T entity);
+	 public abstract T create(T entity);
 	
-	 abstract void update(T entity);
+	 public abstract void update(T entity);
 	
-	 abstract void delete(T entity);
+	 public abstract void delete(T entity);
 	
-	 abstract boolean isExistById(P number); 
+	 public abstract boolean isExistById(I number); 
 }

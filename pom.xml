@@ -46,7 +46,19 @@
 		<artifactId>spring-boot-starter-test</artifactId>
 		<scope>test</scope>
 		<version>${spring-boot}</version>
-	</dependency>	
+	</dependency>
+	
+	
+		
 </dependencies>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+    
 </project>

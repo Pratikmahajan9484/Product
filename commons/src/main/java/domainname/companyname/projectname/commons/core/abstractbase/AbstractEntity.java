@@ -14,7 +14,7 @@ import javax.persistence.MappedSuperclass;
 public class AbstractEntity<P> {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id", updatable = false, nullable = false)
 	private P id;
 	

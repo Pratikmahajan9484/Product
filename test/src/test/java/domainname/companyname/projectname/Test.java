@@ -19,8 +19,7 @@ public class Test {
 		
 		IStudentService bean = (IStudentService) ctx.getBean("service");
 		Student s = new Student();
-		s.setName("Silk");
-		bean.create(s);
+		
 		
 	}
 	

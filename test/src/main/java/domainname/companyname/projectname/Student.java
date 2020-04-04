@@ -15,6 +15,7 @@ public class Student extends AbstractEntity<Long> implements Serializable{
 
 	
 	private static final long serialVersionUID = 1L;
+	
 	@Basic
 	@Column(name="name")
 	private String name;

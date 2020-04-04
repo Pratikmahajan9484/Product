@@ -1,14 +1,16 @@
 package domainname.companyname.projectname.commons.core.abstractservice;
 
-import domainname.companyname.projectname.commons.core.abstractbase.AbstractEntity;
+/*@Author
+Pratik Mahajan*/
 
-public interface AbstractService< T extends AbstractEntity< ? extends Number>, I extends Number >{
+
+interface AbstractService<T , P>{
 	
 	 public abstract T create(T entity);
 	
 	 public abstract T update(T entity);
 	
-	 public abstract void delete(T entity);
+	 public abstract boolean delete(T entity);
 	
-	 public abstract boolean isExistById(I number); 
+	 public abstract boolean isExistById(P number); 
 }

@@ -11,12 +11,12 @@ import javax.persistence.MappedSuperclass;
 
 
 @MappedSuperclass 
-public class AbstractEntity< T extends Number > {
+public class AbstractEntity<P> {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	@Column(name="id", updatable = false, nullable = false)
-	private T id;
+	private P id;
 	
 	@Basic
 	@Column(name="createdon")
@@ -30,11 +30,11 @@ public class AbstractEntity< T extends Number > {
 	@Column(name="active")
 	private boolean isActive=true;
 
-	public T getId() {
+	public P getId() {
 		return id;
 	}
 
-	public void setId(T id) {
+	public void setId(P id) {
 		this.id = id;
 	}
 

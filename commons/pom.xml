@@ -10,6 +10,7 @@
   </parent>
   <artifactId>commons</artifactId>
   <name>commons</name>
+	<packaging>war</packaging>
  
 	
 </project>
